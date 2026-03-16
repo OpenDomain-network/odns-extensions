@@ -1,1 +1,1 @@
-<img scr="/image.png">
+![Header](./image.png)
