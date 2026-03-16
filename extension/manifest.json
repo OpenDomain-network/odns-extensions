@@ -1,13 +1,13 @@
 // --------------------------------
 //      ODNS extension .json
-//       Create by Enlvis_
+//       Created by Enlvis_
 // --------------------------------
 
 {
   "manifest_version": 3,
-  "name": "ODNS - Cheap domains",
+  "name": "ODNS - Free domains",
   "version": "1.0",
-  "description": "ODNS Polski open-source projekt umożliwiający rejestrację tanich domen internetowych.",
+  "description": "ODNS Polski open-source projekt umożliwiający rejestrację darmowych domen internetowych. Za pomocą dodatku do przeglądarki.",
   "permissions": ["tabs", "storage", "webRequest", "<all_urls>"],
   "background": {
     "service_worker": "background.js"
