@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>OpenDomains | Settings</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+
+        <div class="card">
+            <div class="status-row">
+                <div class="dot" id="statusDot"></div>
+                <div class="status-text" id="statusText">Ładowanie ustawień…</div>
+            </div>
+
+            <div class="section">
+                <div class="switch-row">
+                    <div>
+                        <p class="title">ODNS Resolver</p>
+                        <p class="desc">Obsługa dodatkowych domen</p>
+                    </div>
+
+                    <label class="switch" aria-label="Włącz ODNS">
+                        <input type="checkbox" id="toggle" />
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="section">
+                <label class="field">
+                    <p class="title">Wersja beta</p>
+                    <p class="desc">Uczestnicz w testach beta funkcji</p>
+                    <input type="checkbox" id="betaToggle" style="margin-top:8px" />
+                </label>
+            </div>
+
+            <div class="section">
+                <label class="field">
+                    <p class="title">Resolver URL</p>
+                    <input id="resolverUrl" class="input" type="text" placeholder="https://resolver.odns.dev" />
+                </label>
+            </div>
+
+            <div class="section">
+                <label class="field">
+                    <p class="title">Dodatkowe domeny</p>
+                    <p class="desc">Wklej jedną domenę na linię (np. example.sus)</p>
+                    <textarea id="extraDomains" class="textarea" placeholder="example.sus, {ID-Server}, {ID-Owner}"></textarea>
+                </label>
+            </div>
+
+            <div class="controls">
+                <button class="btn primary" id="saveBtn" type="button">Zapisz</button>
+                <button class="btn ghost" id="resetBtn" type="button">Resetuj</button>
+            </div>
+
+            <div id="toast" style="display:none; margin-top:10px; font-size:13px; color:var(--muted)"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    width: 280px;
+    font-family: system-ui, sans-serif;
+    background: #0f1117;
+    color: white;
+}
+
+.card {
+    padding: 18px;
+}
+
+.header {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.beta {
+    font-size: 10px;
+    background: #2a2d3a;
+    padding: 3px 6px;
+    border-radius: 6px;
+    color: #7ee7ff;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #a0a7b8;
+    margin-bottom: 20px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00ff88;
+    box-shadow: 0 0 8px #00ff88;
+}
+
+.dot.red {
+    background: #ff4444;
+    box-shadow: 0 0 8px #ff4444;
+}
+
+.switch-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #161a24;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+}
+
+.title {
+    margin: 0;
+    font-size: 14px;
+}
+
+.desc {
+    margin: 0;
+    font-size: 11px;
+    color: #7a8196;
+}
+
+button {
+    width: 100%;
+    border: none;
+    background: #1f6feb;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #3a82ff;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #444;
+    border-radius: 34px;
+    transition: 0.2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background: white;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+input:checked + .slider {
+    background: #00c853;
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+#openWeb {
+    margin-top: 10px;
+    background: #ed4b1f;
+}
