@@ -61,14 +61,7 @@ Załaduj rozpakowane
 ```
 odns-extension/
 │
-├── manifest.json
-├── background.js
-├── content.js
-├── resolver/
-│   └── resolver.js
-├── ui/
-│   └── popup.html
-└── assets/
+
 ```
 
 ---
@@ -91,14 +84,6 @@ Zalecenia:
 ## ⚠️ Status projektu
 
 🧪 **Eksperymentalny**
-
-To nie jest produkcyjny system.
-
----
-
-## 🧑‍💻 Wkład
-
-Pull requesty mile widziane.
 
 ---
 
