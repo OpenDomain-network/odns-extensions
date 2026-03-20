@@ -35,7 +35,7 @@ Rozszerzenie przechwytuje zapytania do domen i przekształca je według własnyc
 
 1. Pobierz repozytorium:
 ```bash
-git clone https://github.com/opendomain-network/odns-extension.git
+git clone https://github.com/OpenDomain-network/odns-extensions 
 ```
 
 2. Otwórz przeglądarkę opartą na Chromium
