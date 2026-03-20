@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "OpenDomain - ODNS",
-  "version": "1.0",
+  "version": "0.1",
   "description": "ODNS Polski open-source projekt umożliwiający rejestrację tanich darmowych domen internetowych.",
   "chrome_url_overrides": {
     "newtab": "tab.html"
