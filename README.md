@@ -1,6 +1,6 @@
 # 🌐 ODNS Extension
 
-> Browse without DNS. Because why make things simple?
+> Redefiniujemy sposób, w jaki działa internet.
 
 ## 🚀 O projekcie
 
