@@ -52,7 +52,7 @@ chrome://extensions/
 Załaduj rozpakowane
 ```
 
-6. Wybierz folder projektu
+6. Wybierz folder extentions
 
 ---
 
@@ -83,7 +83,7 @@ Zalecenia:
 
 ## ⚠️ Status projektu
 
-🧪 **Eksperymentalny**
+🧪 **Eksperymentalny** (beta)
 
 ---
 
