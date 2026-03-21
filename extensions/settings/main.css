@@ -31,8 +31,11 @@ h1{
 }
 
 .card{
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    border: 1px solid rgba(255,255,255,0.03);
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.08);
     padding: 12px;
     border-radius: 12px;
 }
@@ -45,31 +48,155 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--panel);
+
+    background: rgba(19,21,26,0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
     padding: 12px;
     border-radius: 10px;
     margin-bottom: 8px;
     gap: 12px;
+
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
 .title{font-size:14px; margin:0;}
 .desc{font-size:12px; color:var(--muted); margin:0}
 
-.switch{position:relative; display:inline-block; width:46px; height:24px}
-.switch input{opacity:0;width:0;height:0}
-.slider{position:absolute; cursor:pointer; inset:0; background:#2a2d3a; border-radius:999px; transition:all .18s}
-.slider:before{content:""; position:absolute; height:18px; width:18px; left:3px; top:3px; background:#fff; border-radius:50%; transition:transform .18s}
-input:checked + .slider{background:var(--success)}
-input:checked + .slider:before{transform:translateX(22px)}
+.switch{
+  position:relative;
+  display:inline-block;
+  width:50px;
+  height:30px;
+  flex-shrink:0;
+}
+
+.switch input{
+  opacity:0;
+  width:0;
+  height:0;
+}
+
+.slider{
+  position:absolute;
+  inset:0;
+  cursor:pointer;
+  border-radius:999px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  transition: all 0.25s ease;
+}
+
+.slider::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:999px;
+
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.25),
+    transparent 40%
+  );
+
+  opacity:0.6;
+}
+
+/* knob */
+.slider::before{
+  content:"";
+  position:absolute;
+  height:26px;
+  width:26px;
+  left:2px;
+  top:2px;
+
+  border-radius:50%;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.95),
+    rgba(255,255,255,0.65)
+  );
+
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.35),
+    inset 0 1px 2px rgba(255,255,255,0.6);
+
+  transition: transform 0.25s cubic-bezier(0.4,1.4,0.6,1);
+}
+
+/* ON */
+.switch input:checked + .slider{
+  background: rgba(52,199,89,0.25);
+  border: 1px solid rgba(52,199,89,0.5);
+
+  box-shadow:
+    0 0 12px rgba(52,199,89,0.35);
+}
+
+.switch input:checked + .slider::before{
+  transform: translateX(20px);
+}
+
+/* klik efekt */
+.slider:active::before{
+  width:30px;
+}
 
 .status-row{display:flex; align-items:center; gap:8px; font-size:13px; color:var(--muted); margin-bottom:10px}
 .dot{width:9px; height:9px; border-radius:50%; background:var(--success); box-shadow:0 0 8px rgba(0,200,83,0.18)}
 .dot.inactive{background:#444; box-shadow:none}
 
 .controls{display:flex; gap:8px; margin-top:10px}
-.btn{flex:1; padding:9px 12px; border-radius:10px; border:none; cursor:pointer; font-weight:600}
-.btn.primary{background:var(--accent); color:#fff}
-.btn.ghost{background:transparent; border:1px solid rgba(255,255,255,0.04); color:var(--muted)}
+.btn{
+    flex:1;
+    padding:10px 12px;
+    border-radius:12px;
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color:#fff;
+
+    transition: all 0.2s ease;
+}
+
+/* PRIMARY (ZAPISZ) */
+.btn.primary{
+    background: rgba(31,111,235,0.25);
+    border: 1px solid rgba(31,111,235,0.5);
+
+    box-shadow: 0 0 10px rgba(31,111,235,0.25);
+}
+
+/* GHOST (RESET) */
+.btn.ghost{
+    background: rgba(255,255,255,0.03);
+    color: var(--muted);
+}
+
+/* HOVER EFFECT */
+.btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* CLICK */
+.btn:active{
+    transform: scale(0.97);
+}
 
 label{display:block}
 
