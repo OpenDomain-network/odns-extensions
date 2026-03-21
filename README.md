@@ -27,7 +27,7 @@ Rozszerzenie przechwytuje zapytania do domen i przekształca je według własnyc
 - 🌍 Własny system rozwiązywania nazw  
 - 🔐 Opcjonalne zabezpieczenia (np. podpisy domen)  
 - ⚡ Szybkie lokalne mapowanie  
-- 🧩 Integracja z Chromium (Chrome, Edge, Opera)
+- 🧩 Integracja z Chromium (Chrome, Edge, Brave) Full list is in website 
 
 ---
 
