@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "OpenDomain - ODNS",
   "version": "0.1",
   "description": "ODNS Polski open-source projekt umożliwiający rejestrację darmowych domen internetowych.",
