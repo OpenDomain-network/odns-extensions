@@ -59,8 +59,29 @@ Załaduj rozpakowane
 ## 📁 Struktura projektu
 
 ```
-odns-extension/
-│
+extensions/
+├── background.js
+├── content_script.js
+├── manifest.json
+├── newtab.js
+├── options.html
+├── popup.css
+├── popup.html
+├── popup.js
+├── tab.css
+├── tab.html
+├── backend/
+├── icons/
+│   ├── 16.png
+│   └── security/
+│       ├── no.png
+│       └── yes.png
+└── settings/
+    ├── 404.html
+    ├── main.css
+    ├── main.html
+    └── main.js
+
 
 ```
 
