@@ -106,7 +106,7 @@ ODNS wprowadza nowe podejście do domen, co oznacza też nowe ryzyka:
 - zależność od lokalnych danych  
 
 Zalecenia:
-- używanie podpisów kryptograficznych  
+- używanie podpisów
 - walidacja źródeł  
 - ostrożność  
 
