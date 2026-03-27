@@ -1,1 +1,0 @@
-console.log("Content script działa na stronie: " + window.location.href);
