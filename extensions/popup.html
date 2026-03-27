@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>ODNS</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            OpenDomain Network
+            <span class="beta">beta</span>
+        </div>
+
+        <div class="status">
+            <span id="statusDot" class="dot"></span>
+            <span id="statusText">system aktywny</span>
+        </div>
+
+        <div class="switch-row">
+            <div>
+                <p class="title">ODNS Resolver</p>
+                <p class="desc">Obsluga dodatkowych <br>domen</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="toggle" aria-label="Wlacz ODNS">
+                <span class="slider" role="presentation"></span>
+            </label>
+        </div>
+
+        <button id="openSettings" type="button" aria-label="Otworz ustawienia">⁕ Ustawienia</button>
+        <button id="openWeb" type="button" aria-label="Otworz OpenDomain">※ OpenDomain</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
